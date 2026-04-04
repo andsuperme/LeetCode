@@ -7,4 +7,6 @@ class Solution:
             part = int(d)
             if part > highest:
                 highest = part
+            if highest == 9:
+                return highest
         return highest
