@@ -5,5 +5,4 @@ class Solution:
         for num in nums:
             if num % 3 != 0:
                 res = res + 1
-            print (res)
         return res
