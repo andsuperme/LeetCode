@@ -1,5 +1,5 @@
 class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
-        total = sum(num for num in nums)
+        total = sum(nums)
 
         return total % k
