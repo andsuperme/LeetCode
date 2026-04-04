@@ -1,3 +1,11 @@
 class Solution:
     def minPartitions(self, n: str) -> int:
-        return max(int(d) for d in n)
+        highest = 0 
+
+        for d in n:
+            part = int(d)
+            if part > highest:
+                highest = part
+            if highest == 9:
+                return highest
+        return highest
