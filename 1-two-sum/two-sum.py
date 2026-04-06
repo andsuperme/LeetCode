@@ -4,5 +4,6 @@ class Solution:
 
         for i in range(len(nums)):
             if target - nums[i] in hm:
+                print(hm)
                 return [i, hm[target-nums[i]]]
             hm[nums[i]] = i  
