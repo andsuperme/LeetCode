@@ -5,5 +5,5 @@ class Solution:
         for i in range(len(nums)):
             complement = target - nums[i]
             if complement in hm:
-                return [hm[complement], i]
+                return [i, hm[complement]]
             hm[nums[i]] = i
