@@ -1,14 +1,14 @@
 class Solution:
     def gcdOfOddEvenSums(self, n: int) -> int:
         if n == 1:
-            return n
+            return 1
         
-        mostOdd = (n * 2) - 1
-        mostEven = n * 2
+        odd = n ** 2
+        even = 0
 
-        sumOfOdd = (1 + mostOdd) * n / 2
-        sumOfEven = (2 + mostEven) * n / 2
-
-        for i in range(n, 1, -1):
-            if sumOfOdd % i == 0 and sumOfEven % i == 0:
+        for i in range(n):
+            even += 2
+        
+        for i in range(even//2, 1, -1):
+            if even % i == 0 and odd % i == 0:
                 return i
