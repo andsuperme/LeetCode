@@ -1,1 +1,1 @@
-<h2>gcd-of-odd-and-even-sums Notes</h2><hr>[ Time taken: 3hrs 30m 35s ]
+<h2>gcd-of-odd-and-even-sums Notes</h2><hr>[ Time taken: 4hrs 5m 56s ]
